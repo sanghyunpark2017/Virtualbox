@@ -4,7 +4,7 @@
 
 https://www.virtualbox.org/wiki/Downloads
 
-Windows hosts 다운로드 (VirtualBox-5.2.4-119785-Win.exe)
+Windows hosts 다운로드 후 설치 (VirtualBox-5.2.4-119785-Win.exe)
 
 #가상머신생성
 
@@ -14,7 +14,7 @@ Windows hosts 다운로드 (VirtualBox-5.2.4-119785-Win.exe)
 
 -새가상하드디스크: 고정크기 8GB
 
-#호스트설정
+#호스트키설정
 
 -호스트키변경: 파일->환경설정->입력->가상머신->호스트키조합->Ctrl + Alt
 
@@ -26,31 +26,15 @@ Windows hosts 다운로드 (VirtualBox-5.2.4-119785-Win.exe)
 
 -네트워크>고급>포트포워딩>ADD>호스트포트와 게스트포트에 22 입력 후 확인
 
+#가상서버 선택 후 시작하여 리눅스설치: 타임존 Asia/Seoul, 랜카드ON
 
+#가상서버접속하기
 
-#CentOS7 설치
-CentOS-7-x86_64-Everything-1708.iso
+ipconfig하여 사설NAT IP주소 확인
 
-#초기설정
+putty다운로드하여 위 IP주소로 접속
 
-hostnamectl set-hostname dockerhost
-yum update
-yum install -y net-tools
-
-yum install -y gcc make kernel-devel kernel sources kernel-headers
-
-yum groupinstall -y "Development Tools"
-
-shutdown -r now
-
-#확장설치
-
-가상머신콘솔창->장치->게스트확장CD이미지삽입
-
-
-ls -al
-
-
+-End-
 
 
 
