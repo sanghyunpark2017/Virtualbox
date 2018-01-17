@@ -30,11 +30,11 @@ Windows hosts 다운로드 후 설치 (VirtualBox-5.2.4-119785-Win.exe)
 
 #가상서버접속하기
 
-ipconfig하여 사설NAT IP주소 확인
+PC에서 ipconfig 하여 사설NAT IP주소 확인
 
-putty다운로드하여 위 IP주소로 접속
+여기에 putty 다운로드하여 위 IP주소로 접속
 
-#(선택사항)가상서버클론
+#(선택사항)가상서버클론하려면 셧다운
 
 shutdown -h now
 
